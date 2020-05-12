@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="size">Ajay Kodag</p>
+<button type="button" onclick="changefont()">change font size</button></br></br>
+<script>
+function changefont() {
+
+var str= document.getElementById("size").innerHTML;
+ var res= str.fontsize(7);
+ document.getElementById("size").innerHTML=res;
+
+}
+</script>
+</body>
+</html>
