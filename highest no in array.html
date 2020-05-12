@@ -4,12 +4,16 @@
 
 <h2>JavaScript Array </h2>
 
-<p>The highest number is <span id="demo"></span>.</p>
-
+<p>The highest number is <br/><span id="demo"></span>.</p>
+<button onclick="myFunction()">Click me</button>
 <script>
 var points = [40, 100, 1, 5, 25, 10, 15, 458, 457,78];
 points.sort(function(a, b){return b-a});
 document.getElementById("demo").innerHTML = points[0];
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Ajay Kodag";
+}
 </script>
 
 </body>
