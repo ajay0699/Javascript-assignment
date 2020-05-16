@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id ="demo">ABC ACCOUNT </p>
+        <script>
+            class account{
+                constructor(name,bal) {
+                    this.accountholder=name;   
+                    this.bal=450000;
+                }
+                update(x){
+                    return this.bal= this.bal+x;
+                }
+                display()
+                {
+                    return "<i>Name of account holder is</i> "+ this.accountholder+" <br>"+"<i>initial balance=40000</i>"+"<br>"+"<b>new balance=</b>"+" "+ this.bal;
+                }
+            }
+            obj=new account("Ajay Sunil Kodag");
+            obj.update(20000);
+            
+            
+            document.getElementById("demo").innerHTML = obj.display();
+        </script>
+    </body>
+</html>
