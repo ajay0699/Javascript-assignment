@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo">ABC BANK</p>
+        <script>
+            class Account{
+                constructor(name,bal){
+                                this.accountholder=name;
+                                this.bal=450000;
+                                }
+                deposit(x){
+                    return this.bal= this.bal + x;
+                }
+                withdraw(y){
+                    return this.bal= this.bal - y;
+                }
+                display(){
+                    return "<i>This is ABC bank account</i>"+"<br>"+"<i>The name of Accountholder is</i>"+this.accountholder+"<br>"+"<i>Initial balance of account is=450000</i>"+"<br>"+"<i>After withdraw transcation</i>"+this.bal;
+                }
+                    }
+                    obj=new Account("Ajay Sunil Kodag");
+                    obj.deposit(150000);
+                    obj.withdraw(300000);
+
+
+                    document.getElementById("demo").innerHTML=obj.display();
+                </script>
+                </body>
+                </html>
