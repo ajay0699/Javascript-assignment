@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h2> ABC bank </h2>
+    </head>
+    <body>
+        <p id="demo"> Account details </p>
+        <script>
+            function Employee(instance_id,name,salary){
+                this.id=instance_id;
+                this.name=name;
+                this.sal=salary;
+                this.net=function(){
+                    return this.sal*0.90;
+                };
+                this.cpc = function(){
+                    return this.sal*12;
+                };
+            }
+            var ajay = new Employee(101,"Ajay Kodag",40000);
+            var Akshay = new Employee(102,"Akshay Kodag",35000);
+
+            document.getElementById('demo').innerHTML= "Ajay net salary is " +ajay.net();
+           // document.getElementById('demo').innerHTML="Akshay cpc is : " +Akshay.cpc();
+        </script>
+        </body>
+        </html>
